@@ -1,8 +1,8 @@
-# Orange Fox (OFRP) for Xiaomi Pad 6 (pipa)  
+# Orange Fox for Xiaomi Pad 6 (pipa)  
 Built using Xiaomi Pad 6, HyperOS 1.0 (Android 13), compatible with OrangeFox Android 12 branch  
 
-![OFRP](https://image.ibb.co/cTMWux/logo.jpg "OFRP")  
-====================================================
+<img width="540" height="200" alt="logo" src="https://github.com/user-attachments/assets/23784b9a-46e7-471e-b7bc-1464b8ad3f39" />
+
 # Current Status
 - Display works normally  
 - To ensure proper UI alignment, there are margins on the left and right sides of the screen  
@@ -10,9 +10,8 @@ Built using Xiaomi Pad 6, HyperOS 1.0 (Android 13), compatible with OrangeFox An
 - If you encounter /data decryption failure after flashing HyperOS (Android 15), simply set a lock screen password after booting into the system  
 
 # How to Use
-Go to the [Release](https://github.com/pipaDB/OFRP-device_xiaomi_pipa/releases) page, expand the Assets section, and download the 7z archive.  
-Extract all files, open the extracted folder, and run the `recovery-twrp一键刷入工具.bat` script to flash according to the prompts. If adb detects your device, it will automatically reboot into recovery.  
-Thanks to wzsx150 for the flashing tool script.  
+Go to the [Release](https://github.com/ruik3z/Orange-Fox-Recovery-Build-Full-Guide/releases) page, expand the Assets section, and download the 7z archive.  
+Extract all files, navigate to the extracted folder using a command prompt or terminal (folder should be 'platform-tools'). Then run 'fastboot devices' to check if your plugged-in device is recognized, then run 'fastboot boot RECOVERY-FILE.img' to boot into the recovery temporarily.
 
 After a successful temporary boot, you can go to "Menu" > "More" > "Install current OrangeFox" > swipe to confirm, to install OrangeFox permanently to the boot partition, replacing the stock recovery.  
 Alternatively, you can flash the OrangeFox zip installer to achieve the same.  
@@ -29,13 +28,13 @@ If you flash Magisk in recovery without rebooting, it will be installed to slot 
 You can also use tools like "Gaiji Assistant" (PC version) or FastbootEnhance to simplify the flashing process.  
 
 # How to Build
-Download the OFRP source code and clone this device tree into the appropriate location.  
-For example, if your OFRP source root is `~/fox_12.1`, place this repo at `~/fox_12.1/device/xiaomi/pipa/`:  
+Download the source code and clone this device tree into the appropriate location.  
+For example, if your source root is `~/fox_12.1`, place this repo at `~/fox_12.1/device/xiaomi/pipa/`:  
 ```bash
 cd ~/fox_12.1
 mkdir -p device/xiaomi
 cd device/xiaomi
-git clone https://github.com/pipaDB/OFRP-device_xiaomi_pipa.git pipa
+git clone https://github.com/ruik3z/Orange-Fox-Recovery-Build-Full-Guide.git pipa
 ```
 From the source root directory, run:  
 ```bash
@@ -45,7 +44,7 @@ From the source root directory, run:
 # Cloud Build
 Use Github Actions to build OrangeFox online.  
 For example, if your Github username is "JohnSmith":  
-1. Open the [OrangeFox Action Builder](https://github.com/pipaDB/OrangeFox-Action-Builder) repo and click the `Fork` button in the top right corner.  
+1. Open the [OrangeFox Action Builder](https://github.com/ruik3z/OrangeFox-Recovery-For-Pipa) repo and click the `Fork` button in the top right corner.  
 ![image](https://user-images.githubusercontent.com/37921907/177914706-c92476c5-7e14-4fb3-be94-0c8a11dae874.png)
 2. After the page redirects, you will see the new repo under your username.  
 ![image](https://user-images.githubusercontent.com/37921907/177915106-5bde6fc9-303c-479e-b290-22b48efd1e4e.png)
@@ -55,7 +54,7 @@ For example, if your Github username is "JohnSmith":
 OrangeFox Branch  
 `12.1`  
 Custom Recovery Tree  
-`https://github.com/ymdzq/OFRP-device_xiaomi_pipa`  
+`https://github.com/ruik3z/Orange-Fox-Recovery-Build-Full-Guide`  
 Custom Recovery Tree Branch  
 `fox_12.1-a16`  
 Specify your device path.  
