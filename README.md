@@ -11,7 +11,7 @@ Built using Xiaomi Pad 6, HyperOS 1.0 (Android 13), compatible with OrangeFox An
 
 # How to Use
 Go to the [Release](https://github.com/ruik3z/Orange-Fox-Recovery-Build-Full-Guide/releases) page, expand the Assets section, and download the 7z archive.  
-Extract all files, navigate to the extracted folder using a command prompt or terminal (folder should be 'platform-tools'). Then run 'fastboot devices' to check if your plugged-in device is recognized, then run 'fastboot boot RECOVERY-FILE.img' to boot into the recovery temporarily.
+Extract all files, navigate to the extracted folder using a command prompt or terminal (folder should be 'platform-tools'). Then run 'fastboot devices' to check if your plugged-in device is recognized, and then 'fastboot boot RECOVERY-FILE.img' to boot into recovery temporarily.
 
 After a successful temporary boot, you can go to "Menu" > "More" > "Install current OrangeFox" > swipe to confirm, to install OrangeFox permanently to the boot partition, replacing the stock recovery.  
 Alternatively, you can flash the OrangeFox zip installer to achieve the same.  
