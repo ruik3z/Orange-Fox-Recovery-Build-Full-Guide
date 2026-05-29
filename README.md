@@ -1,3 +1,5 @@
+Credits go to @PipaDB and @ymdzq
+
 # Orange Fox for Xiaomi Pad 6 (pipa)  
 Built using Xiaomi Pad 6, HyperOS 1.0 (Android 13), compatible with OrangeFox Android 12 branch  
 
