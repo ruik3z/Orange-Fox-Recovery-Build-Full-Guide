@@ -1,4 +1,4 @@
-Credits go to @PipaDB and @ymdzq
+Credits go to [@PipaDB](https://github.com/username) and [@ymdzq](https://github.com/ymdzq)
 
 # Orange Fox for Xiaomi Pad 6 (pipa)  
 Built using Xiaomi Pad 6, HyperOS 1.0 (Android 13), compatible with OrangeFox Android 12 branch  
